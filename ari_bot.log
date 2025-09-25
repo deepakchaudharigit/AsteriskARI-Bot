@@ -1,0 +1,37 @@
+/Users/abcom/Downloads/NPCL-Asterisk-ARI-Assistant/.venv/lib/python3.13/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+\n================================================================================
+🚀 STARTING NPCL VOICE ASSISTANT - REAL-TIME ARI SERVER (OPENAI)
+================================================================================
+🔍 Server Status: http://localhost:8000/status
+📞 Call Status: http://localhost:8000/ari/calls
+🌡️ Health Check: http://localhost:8000/ari/health
+================================================================================
+🤖 Assistant: NPCL Assistant
+🧠 AI Provider: OpenAI Real-time API
+🎯 AI Model: gpt-4o-realtime-preview-2024-10-01
+🎤 Voice: alloy
+🔊 Audio: slin16 @ 16000Hz
+📞 Stasis App: openai-voice-assistant
+🌐 External Media: localhost:8090
+🎙️ Voice Interruption: ✅ Enabled
+🔇 Noise Cancellation: ✅ Enabled
+================================================================================
+2025-09-25 10:42:04,387 - src.run_realtime_server - INFO - FastAPI application created successfully
+INFO:     Started server process [28667]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 48] error while attempting to bind on address ('0.0.0.0', 8000): [errno 48] address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+======================================================================
+📞 NPCL Asterisk ARI Voice Assistant Bot
+🎤 Enhanced OpenAI TTS with Whisper Speech Recognition
+🔗 Asterisk PBX Integration
+======================================================================
+🎤 Setting up Enhanced Voice System:
+❌ Enhanced TTS setup failed: No module named 'config'
+💡 Trying fallback TTS...
+✅ Basic TTS: Working
+
+🚀 Starting Asterisk ARI Server...

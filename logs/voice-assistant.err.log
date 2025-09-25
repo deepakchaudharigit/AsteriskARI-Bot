@@ -1,0 +1,223 @@
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 21, in <module>
+    from config.settings import get_settings, get_logging_settings
+  File "/app/config/settings.py", line 7, in <module>
+    from pydantic_settings import BaseSettings, SettingsConfigDict
+ModuleNotFoundError: No module named 'pydantic_settings'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 22, in <module>
+    from src.voice_assistant.utils.logger import setup_logger
+  File "/app/src/voice_assistant/__init__.py", line 6, in <module>
+    from .core.assistant import VoiceAssistant
+  File "/app/src/voice_assistant/core/assistant.py", line 12, in <module>
+    from ..ai.openai_realtime_client import OpenAIRealtimeClient
+  File "/app/src/voice_assistant/ai/openai_realtime_client.py", line 18, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 22, in <module>
+    from src.voice_assistant.utils.logger import setup_logger
+  File "/app/src/voice_assistant/__init__.py", line 6, in <module>
+    from .core.assistant import VoiceAssistant
+  File "/app/src/voice_assistant/core/assistant.py", line 12, in <module>
+    from ..ai.openai_realtime_client import OpenAIRealtimeClient
+  File "/app/src/voice_assistant/ai/openai_realtime_client.py", line 18, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 22, in <module>
+    from src.voice_assistant.utils.logger import setup_logger
+  File "/app/src/voice_assistant/__init__.py", line 6, in <module>
+    from .core.assistant import VoiceAssistant
+  File "/app/src/voice_assistant/core/assistant.py", line 12, in <module>
+    from ..ai.openai_realtime_client import OpenAIRealtimeClient
+  File "/app/src/voice_assistant/ai/openai_realtime_client.py", line 18, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+Traceback (most recent call last):
+  File "/app/src/run_realtime_server.py", line 22, in <module>
+    from src.voice_assistant.utils.logger import setup_logger
+  File "/app/src/voice_assistant/__init__.py", line 6, in <module>
+    from .core.assistant import VoiceAssistant
+  File "/app/src/voice_assistant/core/assistant.py", line 12, in <module>
+    from ..ai.openai_realtime_client import OpenAIRealtimeClient
+  File "/app/src/voice_assistant/ai/openai_realtime_client.py", line 18, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+INFO:     Started server process [23]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+OpenAI Real-time API error [invalid_request_error]: Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.
+openai API error: {'type': 'invalid_request_error', 'code': 'invalid_value', 'message': "Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.", 'param': 'session.voice', 'event_id': None}
+openai API error: {'type': 'invalid_request_error', 'code': 'invalid_value', 'message': "Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.", 'param': 'session.voice', 'event_id': None}
+INFO:     Started server process [23]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+OpenAI Real-time API error [invalid_request_error]: Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.
+openai API error: {'type': 'invalid_request_error', 'code': 'invalid_value', 'message': "Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.", 'param': 'session.voice', 'event_id': None}
+openai API error: {'type': 'invalid_request_error', 'code': 'invalid_value', 'message': "Invalid value: 'fable'. Supported values are: 'alloy', 'ash', 'ballad', 'coral', 'echo', 'sage', 'shimmer', 'verse', 'marin', and 'cedar'.", 'param': 'session.voice', 'event_id': None}
+INFO:     Started server process [24]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+WebSocket connection closed
+INFO:     Started server process [23]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+OpenAI Real-time API error [invalid_request_error]: Your session hit the maximum duration of 60 minutes.
+openai API error: {'type': 'invalid_request_error', 'code': 'session_expired', 'message': 'Your session hit the maximum duration of 60 minutes.', 'param': None, 'event_id': None}
+openai API error: {'type': 'invalid_request_error', 'code': 'session_expired', 'message': 'Your session hit the maximum duration of 60 minutes.', 'param': None, 'event_id': None}
+WebSocket connection closed

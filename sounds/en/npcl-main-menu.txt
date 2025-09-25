@@ -1,0 +1,3 @@
+Audio placeholder for: npcl-main-menu
+Text: Welcome to NPCL customer service. Please select from the following options: Press 1 for AI voice assistant, Press 2 for customer service, Press 3 for technical support, Press 4 for billing department, Press 9 for emergency power outage reporting.
+Note: Install gtts and pydub to generate actual audio files

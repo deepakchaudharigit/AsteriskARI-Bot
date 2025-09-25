@@ -1,0 +1,3 @@
+Audio placeholder for: welcome-to-npcl
+Text: Welcome to NPCL customer service. Your call is important to us.
+Note: Install gtts and pydub to generate actual audio files

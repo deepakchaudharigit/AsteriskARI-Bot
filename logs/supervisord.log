@@ -1,0 +1,158 @@
+2025-09-24 06:04:58,013 INFO Set uid to user 1000 succeeded
+2025-09-24 06:04:58,015 INFO supervisord started with pid 1
+2025-09-24 06:04:59,019 INFO spawned: 'health-monitor' with pid 15
+2025-09-24 06:04:59,021 INFO spawned: 'npcl-voice-assistant' with pid 16
+2025-09-24 06:04:59,833 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:05:00,836 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:05:00,839 INFO spawned: 'npcl-voice-assistant' with pid 19
+2025-09-24 06:05:01,578 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:05:03,582 INFO spawned: 'npcl-voice-assistant' with pid 27
+2025-09-24 06:05:04,321 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:05:07,330 INFO spawned: 'npcl-voice-assistant' with pid 29
+2025-09-24 06:05:08,063 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:05:09,065 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-24 06:08:52,139 WARN received SIGTERM indicating exit request
+2025-09-24 06:08:52,141 INFO waiting for health-monitor to die
+2025-09-24 06:08:54,145 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-24 06:09:37,744 INFO Set uid to user 1000 succeeded
+2025-09-24 06:09:37,747 INFO supervisord started with pid 1
+2025-09-24 06:09:38,751 INFO spawned: 'health-monitor' with pid 14
+2025-09-24 06:09:38,759 INFO spawned: 'npcl-voice-assistant' with pid 16
+2025-09-24 06:09:39,820 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:09:39,820 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:09:39,873 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:09:40,879 INFO spawned: 'npcl-voice-assistant' with pid 18
+2025-09-24 06:09:41,847 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:09:42,850 INFO spawned: 'npcl-voice-assistant' with pid 26
+2025-09-24 06:09:43,712 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:09:45,716 INFO spawned: 'npcl-voice-assistant' with pid 28
+2025-09-24 06:09:46,595 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:09:49,601 INFO spawned: 'npcl-voice-assistant' with pid 36
+2025-09-24 06:09:50,379 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:09:51,381 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-24 06:12:09,837 WARN received SIGTERM indicating exit request
+2025-09-24 06:12:09,839 INFO waiting for health-monitor to die
+2025-09-24 06:12:11,842 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-24 06:15:43,438 INFO Set uid to user 1000 succeeded
+2025-09-24 06:15:43,441 INFO supervisord started with pid 1
+2025-09-24 06:15:44,443 INFO spawned: 'health-monitor' with pid 13
+2025-09-24 06:15:44,447 INFO spawned: 'npcl-voice-assistant' with pid 15
+2025-09-24 06:15:45,363 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:15:46,366 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:15:46,367 INFO spawned: 'npcl-voice-assistant' with pid 17
+2025-09-24 06:15:46,367 WARN received SIGTERM indicating exit request
+2025-09-24 06:15:46,368 INFO waiting for health-monitor, npcl-voice-assistant to die
+2025-09-24 06:15:47,263 WARN stopped: npcl-voice-assistant (exit status 1)
+2025-09-24 06:15:48,265 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-24 06:15:48,735 INFO Set uid to user 1000 succeeded
+2025-09-24 06:15:48,737 INFO supervisord started with pid 1
+2025-09-24 06:15:49,740 INFO spawned: 'health-monitor' with pid 13
+2025-09-24 06:15:49,743 INFO spawned: 'npcl-voice-assistant' with pid 14
+2025-09-24 06:15:50,606 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:15:51,607 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:15:51,609 INFO spawned: 'npcl-voice-assistant' with pid 17
+2025-09-24 06:15:52,621 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-24 06:15:52,622 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:15:53,624 INFO spawned: 'npcl-voice-assistant' with pid 19
+2025-09-24 06:15:54,470 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:15:55,472 INFO spawned: 'npcl-voice-assistant' with pid 26
+2025-09-24 06:15:56,418 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:15:58,423 INFO spawned: 'npcl-voice-assistant' with pid 28
+2025-09-24 06:15:59,263 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:16:02,268 INFO spawned: 'npcl-voice-assistant' with pid 36
+2025-09-24 06:16:03,027 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-24 06:16:04,029 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-24 06:21:20,832 WARN received SIGTERM indicating exit request
+2025-09-24 06:21:20,834 INFO waiting for health-monitor to die
+2025-09-24 06:21:22,837 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 03:13:38,402 INFO Set uid to user 1000 succeeded
+2025-09-25 03:13:38,404 INFO supervisord started with pid 1
+2025-09-25 03:13:39,409 INFO spawned: 'health-monitor' with pid 14
+2025-09-25 03:13:39,412 INFO spawned: 'npcl-voice-assistant' with pid 15
+2025-09-25 03:13:39,412 INFO reaped unknown pid 11 (exit status 0)
+2025-09-25 03:13:40,439 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 03:13:40,439 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 03:13:40,479 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:13:41,482 INFO spawned: 'npcl-voice-assistant' with pid 18
+2025-09-25 03:13:42,233 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:13:43,236 INFO spawned: 'npcl-voice-assistant' with pid 25
+2025-09-25 03:13:44,052 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:13:46,058 INFO spawned: 'npcl-voice-assistant' with pid 27
+2025-09-25 03:13:46,784 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:13:49,788 INFO spawned: 'npcl-voice-assistant' with pid 35
+2025-09-25 03:13:50,545 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:13:51,548 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-25 03:51:21,760 WARN received SIGTERM indicating exit request
+2025-09-25 03:51:21,770 INFO waiting for health-monitor to die
+2025-09-25 03:51:23,783 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 03:51:27,923 INFO Set uid to user 1000 succeeded
+2025-09-25 03:51:27,926 INFO supervisord started with pid 1
+2025-09-25 03:51:28,928 INFO spawned: 'health-monitor' with pid 13
+2025-09-25 03:51:28,931 INFO spawned: 'npcl-voice-assistant' with pid 15
+2025-09-25 03:51:29,796 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:51:30,797 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 03:51:30,799 INFO spawned: 'npcl-voice-assistant' with pid 17
+2025-09-25 03:51:31,537 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:51:33,542 INFO spawned: 'npcl-voice-assistant' with pid 25
+2025-09-25 03:51:34,315 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:51:37,322 INFO spawned: 'npcl-voice-assistant' with pid 27
+2025-09-25 03:51:38,263 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 03:51:39,263 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-25 04:19:25,888 WARN received SIGTERM indicating exit request
+2025-09-25 04:19:25,890 INFO waiting for health-monitor to die
+2025-09-25 04:19:27,893 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 04:20:17,253 INFO Set uid to user 1000 succeeded
+2025-09-25 04:20:17,256 INFO supervisord started with pid 1
+2025-09-25 04:20:18,259 INFO spawned: 'health-monitor' with pid 13
+2025-09-25 04:20:18,262 INFO spawned: 'npcl-voice-assistant' with pid 15
+2025-09-25 04:20:19,092 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 04:20:20,094 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:20:20,096 INFO spawned: 'npcl-voice-assistant' with pid 17
+2025-09-25 04:20:20,876 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 04:20:22,880 INFO spawned: 'npcl-voice-assistant' with pid 25
+2025-09-25 04:20:23,636 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 04:20:26,643 INFO spawned: 'npcl-voice-assistant' with pid 27
+2025-09-25 04:20:27,425 WARN exited: npcl-voice-assistant (exit status 1; not expected)
+2025-09-25 04:20:28,427 INFO gave up: npcl-voice-assistant entered FATAL state, too many start retries too quickly
+2025-09-25 04:24:46,382 WARN received SIGTERM indicating exit request
+2025-09-25 04:24:46,388 INFO waiting for health-monitor to die
+2025-09-25 04:24:48,352 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 04:24:48,352 INFO reaped unknown pid 119 (exit status 0)
+2025-09-25 04:24:49,196 INFO Set uid to user 1000 succeeded
+2025-09-25 04:24:49,198 INFO supervisord started with pid 1
+2025-09-25 04:24:50,201 INFO spawned: 'health-monitor' with pid 13
+2025-09-25 04:24:50,204 INFO spawned: 'npcl-voice-assistant' with pid 14
+2025-09-25 04:24:51,308 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:24:51,308 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:36:22,782 WARN received SIGTERM indicating exit request
+2025-09-25 04:36:22,784 INFO waiting for health-monitor, npcl-voice-assistant to die
+2025-09-25 04:36:23,788 WARN stopped: npcl-voice-assistant (terminated by SIGTERM)
+2025-09-25 04:36:24,797 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 04:36:25,889 INFO Set uid to user 1000 succeeded
+2025-09-25 04:36:25,893 INFO supervisord started with pid 1
+2025-09-25 04:36:26,897 INFO spawned: 'health-monitor' with pid 13
+2025-09-25 04:36:26,900 INFO spawned: 'npcl-voice-assistant' with pid 14
+2025-09-25 04:36:28,518 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:36:28,519 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:37:52,000 WARN received SIGTERM indicating exit request
+2025-09-25 04:37:52,002 INFO waiting for health-monitor, npcl-voice-assistant to die
+2025-09-25 04:37:53,004 WARN stopped: npcl-voice-assistant (terminated by SIGTERM)
+2025-09-25 04:37:54,020 WARN stopped: health-monitor (terminated by SIGTERM)
+2025-09-25 04:38:01,011 INFO Set uid to user 1000 succeeded
+2025-09-25 04:38:01,017 INFO supervisord started with pid 1
+2025-09-25 04:38:02,021 INFO spawned: 'health-monitor' with pid 14
+2025-09-25 04:38:02,024 INFO spawned: 'npcl-voice-assistant' with pid 15
+2025-09-25 04:38:03,718 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 04:38:03,729 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 05:01:47,067 WARN received SIGTERM indicating exit request
+2025-09-25 05:01:47,070 INFO waiting for health-monitor, npcl-voice-assistant to die
+2025-09-25 05:03:16,343 INFO Set uid to user 1000 succeeded
+2025-09-25 05:03:16,346 INFO supervisord started with pid 1
+2025-09-25 05:03:17,350 INFO spawned: 'health-monitor' with pid 13
+2025-09-25 05:03:17,353 INFO spawned: 'npcl-voice-assistant' with pid 14
+2025-09-25 05:03:18,595 INFO success: health-monitor entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 05:03:18,595 INFO success: npcl-voice-assistant entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-25 06:37:29,858 WARN received SIGTERM indicating exit request
+2025-09-25 06:37:29,872 INFO waiting for health-monitor, npcl-voice-assistant to die
+2025-09-25 06:37:30,880 WARN stopped: npcl-voice-assistant (terminated by SIGTERM)
+2025-09-25 06:37:30,885 WARN stopped: health-monitor (terminated by SIGTERM)

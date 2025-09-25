@@ -1,0 +1,3 @@
+Audio placeholder for: hello-world
+Text: Hello World! This is NPCL voice assistant test.
+Note: Install gtts and pydub to generate actual audio files

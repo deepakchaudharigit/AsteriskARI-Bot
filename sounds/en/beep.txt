@@ -1,0 +1,3 @@
+Audio placeholder for: beep
+Text: Please speak after the beep.
+Note: Install gtts and pydub to generate actual audio files

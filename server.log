@@ -1,0 +1,27 @@
+\n================================================================================
+🚀 STARTING NPCL VOICE ASSISTANT - REAL-TIME ARI SERVER (OPENAI)
+================================================================================
+🔍 Server Status: http://localhost:8000/status
+📞 Call Status: http://localhost:8000/ari/calls
+🌡️ Health Check: http://localhost:8000/ari/health
+================================================================================
+🤖 Assistant: NPCL Assistant
+🧠 AI Provider: OpenAI Real-time API
+🎯 AI Model: gpt-4o-realtime-preview-2024-10-01
+🎤 Voice: alloy
+🔊 Audio: slin16 @ 16000Hz
+📞 Stasis App: openai-voice-assistant
+🌐 External Media: localhost:8090
+🎙️ Voice Interruption: ✅ Enabled
+🔇 Noise Cancellation: ✅ Enabled
+================================================================================
+2025-09-24 08:05:44,299 - src.run_realtime_server - INFO - FastAPI application created successfully
+INFO:     Started server process [49502]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55567 - "GET /ari/health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [49502]

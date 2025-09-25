@@ -1,0 +1,135 @@
+# Custom Asterisk 20 LTS Docker Image for NPCL Voice Assistant
+FROM debian:bullseye-slim
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive \
+    ASTERISK_VERSION=20.15.2 \
+    ASTERISK_USER=asterisk \
+    ASTERISK_GROUP=asterisk \
+    ASTERISK_UID=1000 \
+    ASTERISK_GID=1000
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    # Build dependencies
+    build-essential \
+    wget \
+    curl \
+    git \
+    # Asterisk dependencies
+    libssl-dev \
+    libncurses5-dev \
+    libnewt-dev \
+    libxml2-dev \
+    libsqlite3-dev \
+    uuid-dev \
+    libjansson-dev \
+    libedit-dev \
+    libsrtp2-dev \
+    # Audio dependencies
+    libasound2-dev \
+    portaudio19-dev \
+    # Additional utilities
+    sox \
+    mpg123 \
+    # Cleanup
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create asterisk user
+RUN groupadd -g ${ASTERISK_GID} ${ASTERISK_GROUP} && \
+    useradd -u ${ASTERISK_UID} -g ${ASTERISK_GROUP} -d /var/lib/asterisk -s /bin/bash ${ASTERISK_USER}
+
+# Download and compile Asterisk 20 LTS
+WORKDIR /usr/src
+RUN wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-${ASTERISK_VERSION}.tar.gz && \
+    tar -xzf asterisk-${ASTERISK_VERSION}.tar.gz && \
+    cd asterisk-${ASTERISK_VERSION} && \
+    # Configure build
+    ./configure \
+        --with-jansson-bundled \
+        --with-pjproject-bundled \
+        --with-crypto \
+        --with-ssl \
+        --with-srtp \
+        --enable-xmldoc && \
+    # Select modules
+    make menuselect.makeopts && \
+    menuselect/menuselect \
+        --enable app_macro \
+        --enable chan_sip \
+        --enable res_ari \
+        --enable res_ari_applications \
+        --enable res_ari_asterisk \
+        --enable res_ari_bridges \
+        --enable res_ari_channels \
+        --enable res_ari_endpoints \
+        --enable res_ari_events \
+        --enable res_ari_playbacks \
+        --enable res_ari_recordings \
+        --enable res_ari_sounds \
+        --enable res_stasis \
+        --enable res_stasis_answer \
+        --enable res_stasis_playback \
+        --enable res_stasis_recording \
+        --enable res_stasis_snoop \
+        --enable app_stasis \
+        --enable bridge_simple \
+        --enable bridge_softmix \
+        --enable format_wav \
+        --enable format_gsm \
+        --enable format_pcm \
+        --enable format_sln \
+        --enable codec_gsm \
+        --enable codec_ulaw \
+        --enable codec_alaw \
+        --enable codec_g722 \
+        menuselect.makeopts && \
+    # Build and install\n    make -j$(nproc) && \
+    make install && \
+    make samples && \
+    make config && \
+    # Cleanup\n    cd / && \
+    rm -rf /usr/src/asterisk-*
+
+# Create directories and set permissions
+RUN mkdir -p \
+    /etc/asterisk \
+    /var/lib/asterisk \
+    /var/log/asterisk \
+    /var/spool/asterisk \
+    /var/run/asterisk \
+    /usr/lib/asterisk/modules \
+    && chown -R ${ASTERISK_USER}:${ASTERISK_GROUP} \
+        /etc/asterisk \
+        /var/lib/asterisk \
+        /var/log/asterisk \
+        /var/spool/asterisk \
+        /var/run/asterisk \
+        /usr/lib/asterisk
+
+# Copy custom configuration
+COPY asterisk-config/ /etc/asterisk/
+
+# Create entrypoint script
+COPY docker/asterisk-entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Switch to asterisk user
+USER ${ASTERISK_USER}
+
+# Expose ports
+EXPOSE 5060/udp 5060/tcp 8088/tcp 20000-20100/udp
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+    CMD asterisk -rx "core show version" || exit 1
+
+# Set working directory
+WORKDIR /var/lib/asterisk
+
+# Entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Default command
+CMD ["asterisk", "-f", "-vvv", "-dddd", "-c"]

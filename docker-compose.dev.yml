@@ -1,0 +1,40 @@
+services:
+  # Development version with hot reload
+  npcl-voice-assistant-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: npcl-voice-assistant-dev
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "8090:8090"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - VOICE_MODEL=fable
+      - TTS_MODEL=tts-1-hd
+      - LOG_LEVEL=DEBUG
+      - ENABLE_PERFORMANCE_LOGGING=true
+    volumes:
+      - .:/app  # Mount entire project for development
+    # Note: Audio device mapping removed for macOS compatibility
+    networks:
+      - npcl-network
+    entrypoint: ["/app/docker/docker-entrypoint-dev.sh"]
+    depends_on:
+      - asterisk
+
+  # Same Asterisk and Redis as production
+  asterisk:
+    extends:
+      file: docker-compose.yml
+      service: asterisk
+
+  redis:
+    extends:
+      file: docker-compose.yml
+      service: redis
+
+networks:
+  npcl-network:
+    driver: bridge

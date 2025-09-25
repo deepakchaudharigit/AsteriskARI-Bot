@@ -1,0 +1,403 @@
+/Users/abcom/Downloads/NPCL-Asterisk-ARI-Assistant/.venv/lib/python3.13/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+pygame 2.6.1 (SDL 2.28.4, Python 3.13.7)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+\n================================================================================
+🚀 STARTING NPCL VOICE ASSISTANT - REAL-TIME ARI SERVER (OPENAI)
+================================================================================
+🔍 Server Status: http://localhost:8000/status
+📞 Call Status: http://localhost:8000/ari/calls
+🌡️ Health Check: http://localhost:8000/ari/health
+================================================================================
+🤖 Assistant: NPCL Assistant
+🧠 AI Provider: OpenAI Real-time API
+🎯 AI Model: gpt-4o-realtime-preview-2024-10-01
+🎤 Voice: alloy
+🔊 Audio: slin16 @ 16000Hz
+📞 Stasis App: openai-voice-assistant
+🌐 External Media: localhost:8090
+🎙️ Voice Interruption: ✅ Enabled
+🔇 Noise Cancellation: ✅ Enabled
+================================================================================
+2025-09-25 12:15:55,049 - src.run_realtime_server - INFO - FastAPI application created successfully
+INFO:     Started server process [57656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:52137 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52139 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52141 - "GET /ari/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52143 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52145 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52148 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52150 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52152 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52154 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52158 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52161 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52163 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52168 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52170 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52173 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52175 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52177 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52179 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52181 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52183 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52186 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52188 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52192 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52194 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52201 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52203 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52205 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52207 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52210 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52212 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52216 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52218 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52220 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52224 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52226 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52228 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52232 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52234 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52236 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52238 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52243 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52245 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52248 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52250 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52256 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52258 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52260 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52262 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52264 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52266 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52268 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52271 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52273 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52276 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52278 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52286 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52288 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52290 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52293 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52295 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52297 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52299 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52301 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52303 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52307 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52309 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52312 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52314 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52316 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52318 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52320 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52322 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52324 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52326 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52329 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52331 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52336 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52338 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52340 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52342 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52344 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52346 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52348 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52350 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52352 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52354 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52356 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52360 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52362 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52364 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52367 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52369 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52374 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52376 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52378 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52382 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52385 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52387 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52389 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52391 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52393 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52395 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52397 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52399 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52401 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52403 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52405 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52407 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52410 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52412 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52417 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52419 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52421 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52423 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52427 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52429 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52431 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52433 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52435 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52438 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52440 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52442 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52444 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52446 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52448 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52450 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52452 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52454 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52456 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52458 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52460 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52463 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52465 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52469 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52471 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52474 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52476 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52478 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52480 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52482 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52484 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52488 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52491 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52493 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52495 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52497 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52503 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52505 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52507 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52509 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52514 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52517 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52519 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52523 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52525 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52527 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52529 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52536 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52538 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52540 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52543 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52545 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52547 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52549 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52554 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52556 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52558 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52564 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52566 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52573 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52575 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52579 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52581 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52584 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52586 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52588 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52590 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52592 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52594 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52596 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52598 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52600 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52602 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52604 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52606 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52608 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52610 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52612 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52614 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52616 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52618 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52624 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52626 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52628 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52630 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52632 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52636 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52641 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52643 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52645 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52648 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52650 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52652 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52654 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52657 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52659 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52686 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52688 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52694 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52696 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52702 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52708 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52710 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52712 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52714 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52716 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52718 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52722 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52725 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52727 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52732 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52734 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52739 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52741 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52745 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52747 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52749 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52751 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52753 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52755 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52757 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52759 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52762 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52764 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52766 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52768 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52773 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52775 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52778 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52780 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52783 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52785 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52790 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52792 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52794 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52796 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52800 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52804 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52806 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52808 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52812 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52815 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52817 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52819 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52821 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52827 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52829 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52831 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52833 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52836 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52838 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52841 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52843 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52846 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52848 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52850 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52852 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52854 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52856 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52858 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52860 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52864 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52866 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52868 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52870 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52873 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52875 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52877 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52879 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52884 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52886 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52888 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52891 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52893 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52895 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52897 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52899 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52901 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52903 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52905 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52907 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52909 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52911 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52913 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52917 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52919 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52922 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52924 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52926 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52928 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52932 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52935 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52937 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52942 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52944 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52947 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52949 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52951 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52953 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52956 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52958 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52960 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52962 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52966 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52969 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52971 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52973 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52975 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52978 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52980 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52984 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52986 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52989 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52991 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52999 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53001 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53003 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53005 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53010 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53012 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53014 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53016 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53018 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53020 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53022 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53024 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53026 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53030 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53034 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53036 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53038 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53042 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53044 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53046 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53048 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53050 - "GET /ari/calls HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53054 - "GET /ari/calls HTTP/1.1" 200 OK

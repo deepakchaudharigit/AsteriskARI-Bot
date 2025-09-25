@@ -1,0 +1,55 @@
+2025-09-24 08:37:23 - Starting OpenAI migration validation tests
+2025-09-24 08:37:23 - PASS: Python available: Python 3.13.7
+2025-09-24 08:37:23 - PASS: Virtual environment detected
+2025-09-24 08:37:23 - PASS: Directory exists: src
+2025-09-24 08:37:23 - PASS: Directory exists: config
+2025-09-24 08:37:23 - PASS: Directory exists: tests
+2025-09-24 08:37:23 - PASS: Directory exists: docs
+2025-09-24 08:37:23 - PASS: OpenAI package installed
+2025-09-24 08:37:23 - PASS: FastAPI package installed
+2025-09-24 08:37:23 - PASS: WebSockets package installed
+2025-09-24 08:37:24 - PASS: Pydantic package installed
+2025-09-24 08:37:24 - WARNING: Google Generative AI still installed (should be removed)
+2025-09-24 08:37:24 - PASS: Settings file found
+2025-09-24 08:37:24 - PASS: OpenAI API key configuration found
+2025-09-24 08:37:24 - PASS: OpenAI model configuration found
+2025-09-24 08:37:24 - PASS: Gemini references properly removed from settings
+2025-09-24 08:37:24 - PASS: OpenAI API key in .env.example
+2025-09-24 08:37:24 - PASS: Gemini references properly removed from .env.example
+2025-09-24 08:37:24 - PASS: Main application file found
+2025-09-24 08:37:24 - PASS: OpenAI imports found in main.py
+2025-09-24 08:37:24 - PASS: Gemini references properly removed from main.py
+2025-09-24 08:37:24 - PASS: OpenAI Realtime client found
+2025-09-24 08:37:24 - PASS: OpenAI support in AI client factory
+2025-09-24 08:37:24 - PASS: Gemini client files properly removed
+2025-09-24 08:37:24 - PASS: Asterisk extensions.conf found
+2025-09-24 08:37:24 - PASS: OpenAI voice assistant stasis app configured
+2025-09-24 08:37:24 - PASS: Gemini references properly removed from extensions.conf
+2025-09-24 08:37:24 - PASS: Docker compose file found
+2025-09-24 08:37:24 - PASS: Kubernetes namespace file found
+2025-09-24 08:37:24 - PASS: OpenAI configuration in Kubernetes
+2025-09-24 08:37:24 - PASS: Gemini references properly removed from Kubernetes
+2025-09-24 08:37:24 - PASS: README.md found
+2025-09-24 08:37:24 - PASS: OpenAI references in README
+2025-09-24 08:37:24 - PASS: API documentation found
+2025-09-24 08:37:24 - PASS: OpenAI API key documented
+2025-09-24 08:37:24 - PASS: OpenAI references in architecture docs
+2025-09-24 08:37:24 - PASS: Main application syntax valid
+2025-09-24 08:37:24 - PASS: Settings import successful
+2025-09-24 08:37:25 - PASS: AI client factory import successful
+2025-09-24 08:37:25 - PASS: OPENAI_API_KEY environment variable set
+2025-09-24 08:37:25 - PASS: GOOGLE_API_KEY properly removed
+2025-09-24 08:37:25 - PASS: OPENAI_API_KEY in .env file
+2025-09-24 08:37:25 - PASS: Gemini references properly removed from .env
+2025-09-24 08:37:25 - PASS: requirements.txt found
+2025-09-24 08:37:25 - PASS: OpenAI dependency in requirements.txt
+2025-09-24 08:37:25 - PASS: Google Generative AI properly removed from requirements.txt
+2025-09-24 08:37:25 - PASS: OpenAI in Docker requirements
+2025-09-24 08:37:25 - PASS: OpenAI references in setup script
+2025-09-24 08:37:25 - PASS: Gemini references properly removed from setup script
+2025-09-24 08:37:25 - PASS: OpenAI references in realtime setup script
+2025-09-24 08:37:30 - FAIL: FastAPI server failed to start or not responding
+2025-09-24 08:37:35 - FAIL: Health endpoint not working
+2025-09-24 08:37:35 - PASS: Status endpoint accessible
+2025-09-24 08:37:35 - PASS: OpenAPI docs accessible
+2025-09-24 08:37:35 - Migration validation tests completed

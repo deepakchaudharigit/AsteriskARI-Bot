@@ -1,0 +1,56 @@
+# NPCL Voice Assistant - Docker Requirements
+# Minimal dependencies for Docker deployment
+
+# ============================================================================
+# CORE AI & ML DEPENDENCIES
+# ============================================================================
+
+# OpenAI Integration
+openai>=1.0.0
+
+# ============================================================================
+# REAL-TIME COMMUNICATION
+# ============================================================================
+
+# WebSocket communication for OpenAI Realtime API
+websockets>=10.0,<13.0
+aiohttp>=3.8.0
+
+# HTTP client libraries
+requests>=2.31.0
+httpx>=0.24.0
+
+# ============================================================================
+# AUDIO PROCESSING & VOICE (Minimal for Docker)
+# ============================================================================
+
+# Text-to-Speech
+gtts>=2.4.0
+
+# Speech Recognition
+SpeechRecognition>=3.10.0
+
+# Audio processing and manipulation
+pydub>=0.25.1
+numpy>=1.24.0
+scipy>=1.10.0
+
+# ============================================================================
+# WEB FRAMEWORK & API
+# ============================================================================
+
+# FastAPI for ARI integration
+fastapi>=0.104.0
+uvicorn>=0.24.0
+
+# ============================================================================
+# CONFIGURATION & UTILITIES
+# ============================================================================
+
+# Environment and configuration management
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+pydantic-settings>=2.0.0
+
+# System monitoring and utilities
+psutil>=5.9.0
