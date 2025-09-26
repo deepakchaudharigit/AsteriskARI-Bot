@@ -26,6 +26,8 @@ from ..audio.realtime_audio_processor import RealTimeAudioProcessor, AudioConfig
 from .external_media_handler import ExternalMediaHandler
 from .call_transfer_handler import CallTransferHandler
 from ..data.customer_data_manager import CustomerDataManager, InquiryType, Priority, ResolutionStatus
+from ..audio.welcome_player import get_welcome_player, play_welcome_message
+from ..utils.conversation_logger import start_conversation_session, end_conversation_session, log_system_event
 
 logger = logging.getLogger(__name__)
 
@@ -271,6 +273,14 @@ class RealTimeARIHandler:
             # Start AI conversation
             await self.ai_client.start_conversation()
             
+            # Start conversation logging session
+            start_conversation_session(session_id, caller_number)
+            log_system_event(f"Call started from {caller_number} to {called_number}", session_id)
+            
+            # Welcome message disabled - direct AI conversation
+            # asyncio.create_task(self._play_welcome_via_openai(channel_id, session_id))
+            log_system_event("Welcome message disabled - ready for direct AI conversation", session_id)
+            
             # Trigger call started event
             await self._trigger_event_handlers("call_started", {
                 "channel_id": channel_id,
@@ -380,6 +390,74 @@ class RealTimeARIHandler:
             logger.error(f"Failed to start external media for {channel_id}: {e}")
             return False
     
+    async def _play_welcome_message_delayed(self, channel_id: str):
+        """Play welcome message after a short delay to ensure media connection is ready"""
+        try:
+            # Wait for external media connection to be established
+            await asyncio.sleep(2.0)  # 2 second delay
+            
+            # Check if call is still active
+            if channel_id not in self.active_calls:
+                logger.debug(f"Call {channel_id} ended before welcome message could play")
+                return
+            
+            logger.info(f"Playing welcome message for channel {channel_id}")
+            
+            # Get welcome player
+            welcome_player = get_welcome_player()
+            
+            if not welcome_player.is_loaded():
+                logger.warning("Welcome audio not loaded, skipping welcome message")
+                return
+            
+            # Create audio sender function for this channel
+            async def send_audio_to_channel(audio_data: bytes) -> bool:
+                return await self.external_media_handler.send_audio_to_channel(channel_id, audio_data)
+            
+            # Play welcome message
+            success = await welcome_player.stream_welcome_audio(send_audio_to_channel)
+            
+            if success:
+                print(f"🎵 WELCOME MESSAGE PLAYED: {channel_id}")
+                logger.info(f"Welcome message played successfully for channel {channel_id}")
+            else:
+                logger.warning(f"Failed to play welcome message for channel {channel_id}")
+                
+        except Exception as e:
+            logger.error(f"Error playing welcome message for channel {channel_id}: {e}")
+    
+    async def _play_welcome_via_openai(self, channel_id: str, session_id: str):
+        """Play welcome message through OpenAI TTS after external media is established"""
+        try:
+            # Wait for external media connection to be established
+            await asyncio.sleep(3.0)  # 3 second delay for connection setup
+            
+            # Check if call is still active
+            if channel_id not in self.active_calls:
+                logger.debug(f"Call {channel_id} ended before OpenAI welcome could play")
+                return
+            
+            logger.info(f"Playing welcome message via OpenAI for channel {channel_id}")
+            log_system_event("Playing welcome message via OpenAI TTS", session_id)
+            
+            # Create welcome message for OpenAI to speak
+            welcome_text = "Welcome to NPCL Customer Care! I'm here to provide comprehensive support for all your power-related concerns. How may I assist you today?"
+            
+            # Send welcome message to OpenAI for TTS conversion
+            if hasattr(self.ai_client, 'send_text_for_speech'):
+                await self.ai_client.send_text_for_speech(welcome_text)
+            else:
+                # Alternative: Create a response with the welcome message
+                await self.ai_client.create_response()
+            
+            print(f"🎵 OPENAI WELCOME MESSAGE INITIATED: {channel_id}")
+            logger.info(f"OpenAI welcome message initiated for channel {channel_id}")
+            
+        except Exception as e:
+            logger.error(f"Error playing OpenAI welcome message for channel {channel_id}: {e}")
+            # Fallback to original welcome player if OpenAI fails
+            await self._play_welcome_message_delayed(channel_id)
+    
     async def _end_call(self, channel_id: str):
         """End call and cleanup resources"""
         try:
@@ -398,6 +476,11 @@ class RealTimeARIHandler:
                     conversation_summary="Call completed via telephonic bot"
                 )
                 
+            # End conversation logging session
+            if session_id:
+                log_system_event(f"Call ended - Duration: {time.time() - call_info.get('start_time', time.time()):.1f}s", session_id)
+                end_conversation_session(session_id)
+            
             # End session
             if session_id:
                 await self.session_manager.end_session(session_id)

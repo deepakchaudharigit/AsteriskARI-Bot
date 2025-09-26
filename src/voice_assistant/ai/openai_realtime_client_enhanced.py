@@ -20,6 +20,8 @@ import numpy as np
 import audioop
 
 from config.settings import get_settings
+from .npcl_support_prompts import get_enhanced_system_prompt
+from ..utils.conversation_logger import log_caller_speech, log_bot_response, log_system_event
 
 logger = logging.getLogger(__name__)
 
@@ -209,7 +211,7 @@ class OpenAIRealtimeClientEnhanced:
             self.websocket = await asyncio.wait_for(
                 websockets.connect(
                     self.websocket_url,
-                    extra_headers=headers,
+                    additional_headers=headers,
                     ping_interval=20,
                     ping_timeout=10
                 ),
@@ -353,7 +355,7 @@ class OpenAIRealtimeClientEnhanced:
                 "type": "response.create",
                 "response": {
                     "modalities": ["text", "audio"],
-                    "instructions": f"You are {self.settings.assistant_name}, a helpful voice assistant for NPCL (Noida Power Corporation Limited). Respond naturally and conversationally. Keep responses concise but helpful."
+                    "instructions": "Continue the conversation as a comprehensive NPCL customer care representative. Provide detailed, helpful responses and engage in extended conversations to fully resolve customer concerns. Ask follow-up questions when needed and provide thorough explanations."
                 }
             }
             
@@ -412,44 +414,7 @@ class OpenAIRealtimeClientEnhanced:
                 "type": "session.update",
                 "session": {
                     "modalities": ["text", "audio"],
-                    "instructions": """You are a helpful and professional customer care representative for NPCL (Noida Power Corporation Limited).
-
-NATURAL CONVERSATION FLOW:
-1. START with a warm, natural greeting: "Welcome to NPCL Customer Care, how may I help you today?"
-
-2. LISTEN to the customer's concern and respond appropriately:
-   - If they mention power outage/cut: Ask for their area/connection details
-   - If they have a complaint number: Ask them to provide it for status check
-   - If they want to register a complaint: Take their details and register it
-   - If they ask about bills/payments: Guide them appropriately
-
-3. WHEN NEEDED, ask for information naturally:
-   - "Could you please provide your name for verification?"
-   - "Which area are you calling from?"
-   - "Do you have a complaint number I can check for you?"
-   - "What exactly is the issue you're facing?"
-
-4. HELPFUL RESPONSES:
-   - For complaint status: "Let me check that for you... Your complaint [number] is being worked on by our technical team"
-   - For new complaints: "I'll register this complaint for you. Your complaint number is [number]"
-   - For general issues: Provide helpful guidance and next steps
-
-SPEAKING STYLE - Natural Indian English:
-- Use conversational phrases like "Let me check that for you", "I understand", "No problem at all"
-- Be warm and patient: "I'm here to help you", "Don't worry, we'll sort this out"
-- Speak clearly and at a comfortable pace
-- When reading numbers, say each digit clearly: "zero zero zero five four three two one"
-- Use respectful terms like "Sir/Madam" when appropriate
-- Show empathy: "I understand how frustrating power cuts can be"
-
-COMMON SCENARIOS TO HANDLE:
-- Power outages and cuts
-- Complaint registration and status
-- Billing inquiries
-- Connection issues
-- Technical problems
-
-Be responsive to what the customer actually says rather than following a script. Keep responses helpful, brief, and conversational. Always aim to resolve their issue or guide them to the right solution.""",
+                    "instructions": get_enhanced_system_prompt(),
                     "voice": self.config.voice,
                     "input_audio_format": self.config.input_audio_format,
                     "output_audio_format": self.config.output_audio_format,
@@ -589,6 +554,8 @@ Be responsive to what the customer actually says rather than following a script.
         transcript = event.get("transcript", "")
         if transcript.strip():
             logger.debug(f"User said: {transcript}")
+            # Log caller speech to conversation log
+            log_caller_speech(transcript, self.session.session_id if self.session else None)
         
         await self._trigger_event_handlers("transcription_completed", event)
     
@@ -629,6 +596,10 @@ Be responsive to what the customer actually says rather than following a script.
         text_delta = event.get("delta", "")
         if text_delta:
             logger.debug(f"Assistant: {text_delta}")
+            # Accumulate bot response text for logging
+            if not hasattr(self, '_current_bot_response'):
+                self._current_bot_response = ""
+            self._current_bot_response += text_delta
         
         await self._trigger_event_handlers("transcript_delta", event)
     
@@ -644,6 +615,11 @@ Be responsive to what the customer actually says rather than following a script.
             self.session.is_assistant_speaking = False
             self.session.interruption_detected = False
             self.session.waiting_for_response = False
+        
+        # Log complete bot response
+        if hasattr(self, '_current_bot_response') and self._current_bot_response.strip():
+            log_bot_response(self._current_bot_response.strip(), self.session.session_id if self.session else None)
+            self._current_bot_response = ""  # Reset for next response
         
         logger.debug("Response completed")
         await self._trigger_event_handlers("response_done", event)

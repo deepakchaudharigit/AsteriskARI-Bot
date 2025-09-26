@@ -1,2 +1,0 @@
-INFO:__main__:Connecting to Asterisk ARI WebSocket: ws://localhost:8088/ari/events?app=openai-voice-assistant&api_key=asterisk%3A1234
-INFO:__main__:✅ Connected to Asterisk ARI - Stasis app 'openai-voice-assistant' registered!

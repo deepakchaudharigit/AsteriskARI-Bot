@@ -1,0 +1,17 @@
+INFO:__main__:🚀 Starting Basic ARI Handler...
+INFO:__main__:Connecting to ARI WebSocket...
+INFO:__main__:✅ Connected to ARI WebSocket
+INFO:__main__:🎯 Stasis application 'openai-voice-assistant' is registered and ready
+INFO:__main__:\n📋 Basic ARI Handler is ready!
+INFO:__main__:\n🧪 Test Instructions:
+INFO:__main__:1. Dial 1000 in Zoiper
+INFO:__main__:2. Call will be answered with demo messages
+INFO:__main__:3. Call will hangup after demonstration
+INFO:__main__:\n💡 To enable full AI voice assistant:
+INFO:__main__:   - Update OpenAI API key in .env file
+INFO:__main__:   - Stop this handler (Ctrl+C)
+INFO:__main__:   - Run: python3 ari_bot.py
+INFO:__main__:\nPress Ctrl+C to stop...
+INFO:__main__:--------------------------------------------------
+INFO:__main__:📡 Listening for ARI events...
+INFO:__main__:📴 CALL END: Channel 1758887925.0

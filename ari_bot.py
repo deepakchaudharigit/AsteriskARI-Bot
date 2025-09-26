@@ -13,8 +13,11 @@ from pathlib import Path
 # Add src to Python path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-# Set environment variables for enhanced voice
-os.environ['OPENAI_API_KEY'] = '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'
+# Load environment variables from .env file
+from dotenv import load_dotenv
+load_dotenv()
+
+# Don't hardcode API key - use .env file instead
 
 # Suppress warnings
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
@@ -111,9 +114,12 @@ async def start_ari_server():
     try:
         print("\n🚀 Starting Asterisk ARI Server...")
         
-        # Import the ARI server
-        from run_realtime_server import app
+        # Import the ARI server factory
+        from run_realtime_server import create_app
         import uvicorn
+        
+        # Create the app instance
+        app = create_app()
         
         # Configure logging
         logging.basicConfig(level=logging.INFO)

@@ -1,0 +1,11 @@
+
+; Test Stasis Extension - Add to [demo] context
+exten => 1011,1,NoOp(Test Stasis Extension)
+same => n,Answer()
+same => n,Wait(1)
+same => n,Playback(demo-congrats)
+same => n,Wait(1)
+same => n,NoOp(About to call Stasis)
+same => n,Stasis(openai-voice-assistant,test-call)
+same => n,NoOp(Stasis returned - this should not execute)
+same => n,Hangup()

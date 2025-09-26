@@ -1,0 +1,58 @@
+======================================================================
+📞 NPCL Asterisk ARI Voice Assistant Bot
+🎤 Enhanced OpenAI TTS with Whisper Speech Recognition
+🔗 Asterisk PBX Integration
+======================================================================
+🔍 Checking Dependencies:
+✅ OpenAI: v1.109.1
+✅ Enhanced TTS: Available
+✅ FastAPI: Available
+⚠️  Asterisk ARI: Not responding
+
+🎤 Setting up Enhanced Voice System:
+🔊 Testing Enhanced TTS...
+✅ Enhanced TTS: Working perfectly
+🎵 Voice: alloy (Neutral, balanced voice - good for professional use)
+🎛️  Model: tts-1-hd
+
+======================================================================
+🎯 NPCL ARI Bot - Ready for Asterisk Integration
+======================================================================
+
+🚀 Starting Asterisk ARI Server...
+2025-09-26 13:05:05,545 - run_realtime_server - INFO - FastAPI application created successfully
+INFO:ari_bot:NPCL ARI Bot starting...
+INFO:ari_bot:Enhanced OpenAI TTS enabled
+INFO:ari_bot:Whisper speech recognition enabled
+INFO:     Started server process [16633]
+INFO:     Waiting for application startup.
+INFO:src.voice_assistant.telephony.realtime_ari_handler_enhanced:Starting Enhanced Real-time ARI Handler...
+INFO:src.voice_assistant.core.session_manager:Started session cleanup task
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Connecting to OpenAI Real-time API...
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Model: gpt-4o-realtime-preview-2024-10-01
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Voice: alloy
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:WebSocket connection established
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Session setup sent
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Connected to OpenAI Real-time API successfully
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:OpenAI Real-time session created
+INFO:websockets.server:server listening on 127.0.0.1:8090
+INFO:src.voice_assistant.telephony.external_media_handler:External media server started on localhost:8090
+INFO:src.voice_assistant.telephony.realtime_ari_handler_enhanced:Enhanced Real-time ARI Handler started successfully
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:OpenAI Real-time session updated - ready for conversation
+ERROR:src.voice_assistant.ai.openai_realtime_client_enhanced:OpenAI Real-time API error [invalid_request_error]: Your session hit the maximum duration of 60 minutes.
+ERROR:src.voice_assistant.telephony.realtime_ari_handler_enhanced:openai API error: {'type': 'invalid_request_error', 'code': 'session_expired', 'message': 'Your session hit the maximum duration of 60 minutes.', 'param': None, 'event_id': None}
+ERROR:src.voice_assistant.telephony.realtime_ari_handler_enhanced:openai API error: {'type': 'invalid_request_error', 'code': 'session_expired', 'message': 'Your session hit the maximum duration of 60 minutes.', 'param': None, 'event_id': None}
+WARNING:src.voice_assistant.ai.openai_realtime_client_enhanced:WebSocket connection closed
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:src.voice_assistant.telephony.realtime_ari_handler_enhanced:Stopping Enhanced Real-time ARI Handler...
+INFO:websockets.server:server closing
+INFO:websockets.server:server closed
+INFO:src.voice_assistant.telephony.external_media_handler:External media server stopped
+INFO:src.voice_assistant.ai.openai_realtime_client_enhanced:Disconnected from OpenAI Real-time API
+INFO:src.voice_assistant.core.session_manager:Stopped session cleanup task
+INFO:src.voice_assistant.telephony.realtime_ari_handler_enhanced:Enhanced Real-time ARI Handler stopped
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16633]

@@ -1,0 +1,21 @@
+
+; NPCL Voice Assistant Extensions - Add to demo context
+exten => 1000,1,NoOp(NPCL Voice Assistant Override)
+same => n,Answer()
+same => n,Wait(1)
+same => n,Playback(demo-congrats)
+same => n,Wait(2)
+same => n,Stasis(openai-voice-assistant,${CALLERID(num)},${EXTEN})
+same => n,Hangup()
+
+exten => 1010,1,NoOp(NPCL Test Extension)
+same => n,Answer()
+same => n,Wait(1)
+same => n,Playback(demo-congrats)
+same => n,Wait(3)
+same => n,Hangup()
+
+exten => 9000,1,NoOp(Echo Test)
+same => n,Answer()
+same => n,Echo()
+same => n,Hangup()
