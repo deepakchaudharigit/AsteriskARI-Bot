@@ -623,7 +623,7 @@ python src/main.py
 
 ---
 
-**📝 Last Updated**: December 2024  
+**📝 Last Updated**: Oct 2025
 **🎯 Version**: 2.0  
 **🏢 Organization**: NPCL (Noida Power Corporation Limited)  
 **⭐ Status**: Production Ready
